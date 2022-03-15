@@ -1,0 +1,46 @@
+# Reading C:/modelsim_6.6d/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.6d Nov  1 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do run.do 
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling module top
+# -- Compiling interface tb_ifc
+# -- Compiling module instr_register_test
+# 
+# Top level modules:
+# 	top
+# vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -novopt top 
+# Refreshing C:\Users\radul\OneDrive\Desktop\lab2\sim\work.instr_register_pkg
+# Refreshing C:\Users\radul\OneDrive\Desktop\lab2\sim\work.top
+# Refreshing C:\Users\radul\OneDrive\Desktop\lab2\sim\work.tb_ifc
+# Refreshing C:\Users\radul\OneDrive\Desktop\lab2\sim\work.instr_register_test
+# Refreshing C:\Users\radul\OneDrive\Desktop\lab2\sim\work.instr_register
+# ** Warning: (vsim-3017) ../lab2/lab01_testbench-interface/top.sv(16): [TFMPC] - Too few port connections. Expected 1, found 0.
+#         Region: /top/lab2if
+# ** Warning: (vsim-3722) ../lab2/lab01_testbench-interface/top.sv(16): [TFMPC] - Missing connection for port 'clk'.
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# Reseting the instruction register...
+add wave sim:/top/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/radul/OneDrive/Desktop/lab2/sim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/radul/OneDrive/Desktop/lab2/sim/wave.do
+# Break key hit 
+# Break in Module instr_register at ../lab2/lab_dut/instr_register.sv line 28
