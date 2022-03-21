@@ -1,0 +1,130 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\radul\OneDrive\Desktop\lab2
+Eadd_8
+Z1 w1425060656
+Z2 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z3 dC:\Users\radul\OneDrive\Desktop\lab2
+8C:/Users/radul/OneDrive/Desktop/lab2/add_8.vhd
+FC:/Users/radul/OneDrive/Desktop/lab2/add_8.vhd
+l0
+L4
+V6`WlhaF2ndJZ3lM;7Y7>63
+Z4 OE;C;6.6d;45
+32
+Z5 o-work work
+Z6 tExplicit 1
+!s100 gRVC291m>;mQ0Z<Qf2;<D1
+Aadd_8_df
+R2
+Z7 DEx4 work 5 add_8 0 22 6`WlhaF2ndJZ3lM;7Y7>63
+8C:/Users/radul/OneDrive/Desktop/lab2/add_8_df.vhd
+FC:/Users/radul/OneDrive/Desktop/lab2/add_8_df.vhd
+l3
+L1
+VknR=?8HD_claZH6SEe_Ti0
+R4
+32
+Z8 Mx1 4 ieee 14 std_logic_1164
+R5
+R6
+!s100 S<jdaXJPWMcS@Qkmeh66Q1
+Eadd_8_monitor
+Z9 w1425060720
+Z10 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z11 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+R2
+R3
+Z12 8C:/Users/radul/OneDrive/Desktop/lab2/add_8_monitor.vhd
+Z13 FC:/Users/radul/OneDrive/Desktop/lab2/add_8_monitor.vhd
+l0
+L5
+VLhd37PgV6U7d2hhAm3h?[0
+R4
+32
+R5
+R6
+!s100 iSBgL7?0TEF]C:gNWBJOj3
+Aadd_8_monitor
+R10
+R11
+R2
+Z14 DEx4 work 13 add_8_monitor 0 22 Lhd37PgV6U7d2hhAm3h?[0
+l13
+L12
+V8<>^oFD_z_4MliL=::HUi1
+R4
+32
+Z15 Mx3 4 ieee 14 std_logic_1164
+Z16 Mx2 4 ieee 18 std_logic_unsigned
+Z17 Mx1 4 ieee 15 std_logic_arith
+R5
+R6
+!s100 2RY7<c3^da1JFg[NdHYMa0
+Eadd_8_tb
+Z18 w1425060772
+R10
+R11
+R2
+R3
+Z19 8C:/Users/radul/OneDrive/Desktop/lab2/add_8_tb.vhd
+Z20 FC:/Users/radul/OneDrive/Desktop/lab2/add_8_tb.vhd
+l0
+L5
+VXlbBJ`799dI3d]l<_MnRe3
+R4
+32
+R5
+R6
+!s100 enDL`HdNB55oPE`?@FX_X2
+Aadd_8_tb
+R10
+R11
+R2
+Z21 DEx4 work 8 add_8_tb 0 22 XlbBJ`799dI3d]l<_MnRe3
+l14
+L11
+VTIFoOZ3RDn@gH=6id[3:d3
+R4
+32
+R15
+R16
+R17
+R5
+R6
+!s100 TP6;i8FNdch<oaX3K7[g]3
+Eadd_8_test
+Z22 w1425060774
+R2
+R3
+Z23 8C:/Users/radul/OneDrive/Desktop/lab2/add_8_test.vhd
+Z24 FC:/Users/radul/OneDrive/Desktop/lab2/add_8_test.vhd
+l0
+L4
+VzC<T>^8dTU9NSdhzPO1h<3
+!s100 n2_c]G=N4cFf>4``^@?eF0
+R4
+32
+R5
+R6
+Aadd_8_test
+R14
+R7
+R10
+R11
+R21
+R2
+DEx4 work 10 add_8_test 0 22 zC<T>^8dTU9NSdhzPO1h<3
+l36
+L7
+V]>KE^[]f>2K<_bO5^fhLY2
+!s100 Jk_GN6zB:]XF:3N`f3YNK3
+R4
+32
+R15
+R16
+R17
+R5
+R6
