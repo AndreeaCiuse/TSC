@@ -16,21 +16,22 @@ module instr_register_test
    //output address_t      write_pointer,
    //output address_t      read_pointer,
    //input  instruction_t  instruction_word
-   tb_ifc lab2_if
+   tb_ifc.test lab2_if
   );
 
  //timeunit 1ns/1ns;
-
+  
   int seed = 555;
 
-  initial begin
-    $display("\n\n***********************************************************");
+  initial begin // inital begin initializeaza inceputul unui mod bloc temportal(care va executa timp) mereu un initial begin are timp de simulare 0 
+    $display("\n\n***********************************************************"); // afiseaza ce este in paranteza pe transcript 
     $display(    "***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***");
     $display(    "***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***");
     $display(    "***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***");
     $display(    "***********************************************************");
 
     $display("\nReseting the instruction register...");
+	$display("\n First display")
     lab2_if.write_pointer  = 5'h00;         // initialize write pointer
     lab2_if.read_pointer   = 5'h1F;         // initialize read pointer
     lab2_if.load_en        = 1'b0;          // initialize load control line
@@ -48,7 +49,7 @@ module instr_register_test
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");
-    for (int i=0; i<=2; i++) begin
+    for (int i=2; i>=0; i++) begin
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
