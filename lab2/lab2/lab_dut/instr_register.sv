@@ -18,7 +18,7 @@ import instr_register_pkg::*;  // user-defined types are defined in instr_regist
  input  address_t      read_pointer,
  output instruction_t  instruction_word
 );
-  //timeunit 1ns/1ns;
+ // timeunit 1ns/1ns;
 
   instruction_t  iw_reg [0:31];  // an array of instruction_word structures
 
