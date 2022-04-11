@@ -21,10 +21,19 @@ module instr_register_test
   );
 
   //timeunit 1ns/1ns;
+class first_test;
+ virtual tb_ifc.TEST lab2_if;
+ 
+ 
+function new(virtual tb_ifc.TEST lab2_if);
+this.lab2_if = lab2_if;
+	
+endfunction
 
-  int seed = 555;
+   int seed = 555;
 
-  initial begin
+  // initial begin
+  task run();
     $display("\n\n***********************************************************");
     $display(    "***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***");
     $display(    "***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***");
@@ -64,8 +73,8 @@ module instr_register_test
     $display(  "***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***");
     $display(  "***********************************************************\n");
     $finish;
-  end
-
+  endtask
+	
   function void randomize_transaction;
     // A later lab will replace this function with SystemVerilog
     // constrained random values
@@ -93,6 +102,20 @@ module instr_register_test
     $display("  lab2_if.cb.opcode = %0d (%s)", lab2_if.cb.instruction_word.opc, lab2_if.cb.instruction_word.opc.name);
     $display("  lab2_if.cb.operand_a = %0d",   lab2_if.cb.instruction_word.op_a);
     $display("  lab2_if.cb.operand_b = %0d\n", lab2_if.cb.instruction_word.op_b);
+	$display("  result    = %0d\n", lab2_if.cb.instruction_word.res);
   endfunction: print_results
-
+  
+  endclass 
+  
+  initial begin
+    
+	
+    first_test  fst;
+	fst = new(lab2_if);
+	fst.run();
+	
+	end
+	
+  
+  
 endmodule: instr_register_test

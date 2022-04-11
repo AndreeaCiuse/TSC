@@ -22,24 +22,24 @@
 # Top level modules:
 # 	top
 # vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -novopt top 
-# Refreshing C:\Users\ALIN\Desktop\TSC\lab2 _part3\lab2 _part3\sim\work.instr_register_pkg
-# Refreshing C:\Users\ALIN\Desktop\TSC\lab2 _part3\lab2 _part3\sim\work.top
-# Refreshing C:\Users\ALIN\Desktop\TSC\lab2 _part3\lab2 _part3\sim\work.tb_ifc
-# Refreshing C:\Users\ALIN\Desktop\TSC\lab2 _part3\lab2 _part3\sim\work.instr_register_test
-# Refreshing C:\Users\ALIN\Desktop\TSC\lab2 _part3\lab2 _part3\sim\work.instr_register
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(80): Clocking block output lab2_if.cb.opcode is not legal in this
+# Refreshing C:\Users\ALIN\Desktop\TSC\lab2\lab2\sim\work.instr_register_pkg
+# Refreshing C:\Users\ALIN\Desktop\TSC\lab2\lab2\sim\work.top
+# Refreshing C:\Users\ALIN\Desktop\TSC\lab2\lab2\sim\work.tb_ifc
+# Refreshing C:\Users\ALIN\Desktop\TSC\lab2\lab2\sim\work.instr_register_test
+# Refreshing C:\Users\ALIN\Desktop\TSC\lab2\lab2\sim\work.instr_register
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(95): Clocking block output lab2_if.cb.opcode is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(78): Clocking block output lab2_if.cb.operand_a is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(96): Clocking block output lab2_if.cb.operand_a is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(79): Clocking block output lab2_if.cb.operand_b is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(97): Clocking block output lab2_if.cb.operand_b is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(36): Clocking block output lab2_if.cb.read_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(94): Clocking block output lab2_if.cb.write_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(35): Clocking block output lab2_if.cb.write_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(101): Clocking block output lab2_if.cb.read_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
 # 
@@ -110,50 +110,70 @@
 #   lab2_if.cb.operand_a = -9
 #   lab2_if.cb.operand_b = 1
 # 
+#   result    = -9
+# 
 # Read from register location 9: 
 #   lab2_if.cb.opcode = 7 (MOD)
 #   lab2_if.cb.operand_a = -2
 #   lab2_if.cb.operand_b = 5
+# 
+#   result    = -2
 # 
 # Read from register location 6: 
 #   lab2_if.cb.opcode = 4 (SUB)
 #   lab2_if.cb.operand_a = 3
 #   lab2_if.cb.operand_b = 13
 # 
+#   result    = -10
+# 
 # Read from register location 0: 
 #   lab2_if.cb.opcode = 1 (PASSA)
 #   lab2_if.cb.operand_a = -12
 #   lab2_if.cb.operand_b = 4
+# 
+#   result    = -12
 # 
 # Read from register location 8: 
 #   lab2_if.cb.opcode = 2 (PASSB)
 #   lab2_if.cb.operand_a = 3
 #   lab2_if.cb.operand_b = 5
 # 
+#   result    = 5
+# 
 # Read from register location 3: 
 #   lab2_if.cb.opcode = 2 (PASSB)
 #   lab2_if.cb.operand_a = -8
 #   lab2_if.cb.operand_b = 5
+# 
+#   result    = 5
 # 
 # Read from register location 4: 
 #   lab2_if.cb.opcode = 5 (MULT)
 #   lab2_if.cb.operand_a = -9
 #   lab2_if.cb.operand_b = 1
 # 
+#   result    = -9
+# 
 # Read from register location 3: 
 #   lab2_if.cb.opcode = 2 (PASSB)
 #   lab2_if.cb.operand_a = -8
 #   lab2_if.cb.operand_b = 5
 # 
-# Read from register location 9: 
-#   lab2_if.cb.opcode = 7 (MOD)
-#   lab2_if.cb.operand_a = -2
-#   lab2_if.cb.operand_b = 5
+#   result    = 5
 # 
 # Read from register location 9: 
 #   lab2_if.cb.opcode = 7 (MOD)
 #   lab2_if.cb.operand_a = -2
 #   lab2_if.cb.operand_b = 5
+# 
+#   result    = -2
+# 
+# Read from register location 9: 
+#   lab2_if.cb.opcode = 7 (MOD)
+#   lab2_if.cb.operand_a = -2
+#   lab2_if.cb.operand_b = 5
+# 
+#   result    = -2
 # 
 # 
 # ***********************************************************
@@ -162,10 +182,10 @@
 # ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
 # ***********************************************************
 # 
-# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(66)
+# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(75)
 #    Time: 445 ns  Iteration: 2  Instance: /top/test
 # 1
-# Break in Module instr_register_test at ../lab01_testbench-interface/instr_register_test.sv line 66
+# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 75
 # Simulation Breakpoint: 1
-# Break in Module instr_register_test at ../lab01_testbench-interface/instr_register_test.sv line 66
+# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 75
 # MACRO ./run.do PAUSED at line 45

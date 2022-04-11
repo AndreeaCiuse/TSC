@@ -2,38 +2,38 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\ALIN\Desktop\TSC\lab2 _part3\lab2 _part3\sim
+Z0 dC:\Users\ALIN\Desktop\TSC\lab2\lab2\sim
 vinstr_register
 Z1 Mx1 6 sv_std 3 std
 Z2 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
 Z3 Mx2 4 work 18 instr_register_pkg
-Z4 DXx4 work 18 instr_register_pkg 0 22 dg750a9QiLbf22JDSNjj]3
+Z4 DXx4 work 18 instr_register_pkg 0 22 iON2e[65V8mRHXl68cezB0
 V3z9A3Eb_VM7O2iR_@`ig80
 r1
 !s85 0
 31
-I6=3Z5R?<N>2423B@Zz1>93
+IPaM24G0kF`7dmC@8CG0>S2
 S1
-Z5 dC:\Users\ALIN\Desktop\TSC\lab2 _part3\lab2 _part3\sim
-w1647264792
+Z5 dC:\Users\ALIN\Desktop\TSC\lab2\lab2\sim
+w1649663825
 8../lab_dut/instr_register.sv
 F../lab_dut/instr_register.sv
 L0 9
 Z6 OE;L;6.6d;45
 Z7 o-sv -work work -L mtiAvm -L mtiOvm -L mtiUPF
 Z8 !s92 -sv -work work +incdir+../../lab_dut +incdir+../../lab_dut +incdir+../../lab01_testbench-interface +incdir+../../lab01_testbench-interface +incdir+../../lab01_testbench-interface -L mtiAvm -L mtiOvm -L mtiUPF
-!s100 NLc^O8MBO135k<>On?`9F3
+!s100 B_MzbX@dSZ3n;B71?EjUf0
 !s105 instr_register_sv_unit
 Xinstr_register_pkg
 R1
 R2
-Vdg750a9QiLbf22JDSNjj]3
+ViON2e[65V8mRHXl68cezB0
 r1
 31
-Idg750a9QiLbf22JDSNjj]3
+IiON2e[65V8mRHXl68cezB0
 S1
 R5
-w1647264727
+w1649664007
 8../lab_dut/instr_register_pkg.sv
 F../lab_dut/instr_register_pkg.sv
 L0 5
@@ -41,7 +41,7 @@ R6
 R7
 R8
 !s85 0
-!s100 TnBzV1[h^UXR_=KfYOJA_3
+!s100 Fc`0_?EEoN_Ih0lP[R@FO0
 vinstr_register_test
 R1
 R2
@@ -50,10 +50,10 @@ R4
 VEBCnBoI9@;K2I3Z?DhHY42
 r1
 31
-I?S7:[g?2ZaZRI>Wc`L9ZJ1
+ITe38jO9jZfCOe@a1;SdI42
 S1
 R5
-w1649075155
+w1649679075
 8../lab01_testbench-interface/instr_register_test.sv
 F../lab01_testbench-interface/instr_register_test.sv
 L0 8
@@ -61,7 +61,7 @@ R6
 R7
 R8
 !s85 0
-!s100 7HDbTHzP@WWY0deLa2NeJ1
+!s100 :M]_o0S9In5^K<oV2ID6=2
 !s105 instr_register_test_sv_unit
 Ytb_ifc
 R1
